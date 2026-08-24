@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // --- B. TAMAM TEXT / DATE / EMAIL INPUTS CHECK KAREIN ---
+
             const allInputs = document.querySelectorAll("input[type='text'], input[type='date'], input[type='email'], input[type='tel']");
             allInputs.forEach(function (input) {
                 if (input.value.trim() === "") {
@@ -45,18 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // --- C. SPECIAL EMAIL FORMAT CHECK ---
             const emailInput = document.querySelector("input[type='email']");
             if (emailInput && emailInput.value.trim() !== "") {
                 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailPattern.test(emailInput.value.trim())) {
                     isValid = false;
                     emailInput.style.border = "2px solid #ef4444";
-                    errors.push("Valid Email address likhein.");
+                    errors.push("Please enter a valid Email address.");
                 }
             }
 
-            // --- D. SPECIAL PHONE NUMBER CHECK (11 Digits starting with 03) ---
             const phoneInputs = document.querySelectorAll("input[type='tel']");
             phoneInputs.forEach(function (phone) {
                 if (phone.value.trim() !== "") {
@@ -69,16 +67,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // --- E. SPECIAL CNIC / ID CARD CHECK (13 Digits) ---
             const idInputs = document.querySelectorAll("input[placeholder='Enter ID number']");
             idInputs.forEach(function (idInput) {
                 if (idInput.value.trim() !== "") {
-                    // Dashes ke sath ya dashes ke baghair (13 digits total)
                     const cnicPattern = /^\d{13}$|^\d{5}-\d{7}-\d{1}$/;
                     if (!cnicPattern.test(idInput.value.trim())) {
                         isValid = false;
                         idInput.style.border = "2px solid #ef4444";
-                        errors.push("ID Card / B-Form number 13 digits ka hona chahiye.");
+                        errors.push("please enter a valid CNIC / ID Number in 13 digits (e.g. 12345-1234567-1).");
                     }
                 }
             });
@@ -88,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 isValid = false;
                 textarea.style.border = "2px solid #ef4444";
                 textarea.style.backgroundColor = "#fef2f2";
-                errors.push("Address kam az kam 10 characters ka likhein.");
+                errors.push("at least 10 characters are written.");
             }
 
             // --- G. LAPTOP RADIO BUTTON CHECK ---
@@ -101,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     radioContainer.style.padding = "5px";
                     radioContainer.style.borderRadius = "5px";
                 }
-                errors.push("Laptop 'Yes' ya 'No' select karein.");
+                errors.push("Laptop 'Yes' ya 'No' select ");
             } else {
                 if (radioContainer) radioContainer.style.border = "";
             }
@@ -112,23 +108,24 @@ document.addEventListener("DOMContentLoaded", function () {
             if (fileInput && fileInput.files.length === 0) {
                 isValid = false;
                 if (dropzone) dropzone.style.border = "2px dashed #ef4444";
-                errors.push("Profile picture upload karna lazmi hai.");
+                errors.push("please upload a profile photo.");
             } else if (dropzone) {
                 dropzone.style.border = "";
             }
 
             // --- FINAL DECISION ---
             if (isValid) {
-                alert("🎉 Form Kamiyabi Se Validate Ho Gaya Hai!");
+                alert("✅ Form successfully submitted! Thank you for your application.");
                 
-                // Agar forms ko sach mein submit karwana hai toh:
+
                 const allForms = document.querySelectorAll("form");
                 allForms.forEach(form => form.submit());
             } else {
-                alert("⚠️ Baraye meharbani laal (Red) fields ko theek karein:\n\n" + (errors.length > 0 ? "• " + errors.join("\n• ") : "• Tamam required (*) fields bharna lazmi hain."));
+                alert("⚠️ Please correct the following errors:\n\n" + (errors.length > 0 ? "• " + errors.join("\n• ") : "• All required (*) fields must be filled."));
                 
-                // Pehli laal error field par screen scroll karwana
+
                 const firstError = document.querySelector("[style*='solid #ef4444'], [style*='dashed #ef4444']");
+
                 if (firstError) {
                     firstError.scrollIntoView({ behavior: "smooth", block: "center" });
                 }
@@ -136,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Typing shuru karte hi red border ko khud hi remove karna
+    
     document.body.addEventListener("input", function (e) {
         if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") {
             e.target.style.border = "";
@@ -156,8 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-// Floating support widget bubble closure logic
 document.querySelector('.close-chat-action').addEventListener('click', function() {
     document.querySelector('.chat-message-bubble').style.display = 'none';
 });
