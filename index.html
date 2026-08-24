@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>form</title>
-            <link rel="stylesheet" href="style.css">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Course Registration Form</title>
+    <!-- Stylesheets Links -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- FontAwesome 6 for clean pixel icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
 <body>
-      <div class="nav-main-div">
-            <div class="second-main-div">
-            <img src="image/smit-image.png" alt="">
-            <nav>
-                  <a href="#" class="anchor">Home</a>
-                  <a href="#" class="anchor">About</a>
-                  <select  style="color: rgb(84, 84, 84);"><option>Courses</option></select>
-                  <a href="#" class="anchor">Courses</a>
-                  <a href="#" class="anchor">Result Check</a>
-                  <button class="enroll-btn"> Enroll Now <i class="fa-solid fa-square-arrow-up-right" style="color: white;"></i></button>
-            </nav>   
-      </div> 
-</div>
 
-<div class="linear-div"> 
-         <div class="sec-linear-div">
-              <a href="#"><i class="fa-solid fa-graduation-cap" style="color: rgb(255, 255, 255);"></i></a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" color="white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3 h-3 sm:w-4 sm:h-4 mx-1 sm:mx-2 text-white/70" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
-              <span style="color: white;"> Enroll Now</span>
-              <h1>Registration Form</h1>
-              <p>Start your journey towards excellence. Fill out the form to apply for our courses</p>
-            </div>
-      </div>
-<!-- next mini div -->
-      <div class="mini-div ">
-            <div class="registration"><i class="fa-brands fa-wpforms" style="color: rgb(255, 255, 255);"></i>  Resgistratuion Form</div>
-            <div class="ID-card"> <i class="fa-regular fa-address-card" style="color: rgb(0, 0, 0);"></i>  Download ID Card</div>
-            <div class="result"> <i class="fa-regular fa-file-lines" style="color: rgb(7, 7, 7);"></i>  Result</div>
-      </div>
+    <!-- 1. Header & Navbar Section -->
+    <div class="nav-main-div">
+        <div class="second-main-div">
+            <img src="image/smit-image.png" alt="SMIT Logo">
+            <nav>
+                <a href="#" class="anchor">Home</a>
+                <a href="#" class="anchor">About</a>
+                <select class="nav-select">
+                    <option>Courses</option>
+                </select>
+                <a href="#" class="anchor">Campuses</a>
+                <a href="#" class="anchor">Result Check</a>
+                <button class="enroll-btn">Enroll Now <i class="fa-solid fa-arrow-up-right-from-square" style="color: white; margin-left: 5px;"></i></button>
+            </nav>   
+            <div class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        </div> 
+    </div>
+
+    <!-- 2. Linear Banner Section -->
+    <div class="linear-div"> 
+        <div class="sec-linear-div">
+            <a href="#"><i class="fa-solid fa-graduation-cap" style="color: rgb(255, 255, 255);"></i></a>
+            <svg xmlns="http://w3.org" width="16" height="16" color="white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; opacity: 0.8;"><path d="m9 18 6-6-6-6"></path></svg>
+            <span style="color: white;"> Enroll Now</span>
+            <h1>Registration Form</h1>
+            <p>Start your journey towards excellence. Fill out the form to apply for our courses</p>
+        </div>
+    </div>
+
+    <!-- 3. Mini Action Row -->
+    <div class="mini-div">
+        <div class="registration"><i class="fa-solid fa-file-invoice" style="color: rgb(255, 255, 255);"></i> Registration Form</div>
+        <div class="ID-card"><i class="fa-regular fa-address-card" style="color: rgb(0, 0, 0);"></i> Download ID Card</div>
+        <div class="result"><i class="fa-regular fa-file-lines" style="color: rgb(7, 7, 7);"></i> Result</div>
+    </div>
       
- <div class="form-container">
+    <!-- 4. Location Form -->
+    <div class="form-container">
         <h2 class="section-title">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -71,6 +81,7 @@
                         <option selected disabled>Select class preference</option>
                         <option value="onsite">Onsite</option>
                         <option value="online">Online</option>
+
                     </select>
                 </div>
             </div>
@@ -82,7 +93,7 @@
                     <select class="form-select">
                         <option selected disabled>Select gender</option>
                         <option value="male">Male</option>
-                        <option value="femlae">Female</option>
+                        <option value="female">Female</option>
                         <option value="others">Others</option>
                     </select>
                 </div>
@@ -93,16 +104,14 @@
                 <label class="form-label">Select City <span class="required">*</span></label>
                 <div class="select-wrapper">
                     <select class="form-select">
-                        <option selected disabled>Select country first</option>
+                        <option selected disabled>Select city</option>
                         <option value="karachi">Karachi</option>
                         <option value="Islamabad">Islamabad</option>
                         <option value="Lahore">Lahore</option>
                         <option value="Multan">Multan</option>
-                        <option value="Sialkot">Sialkot</option>
-                        <option value="Balochistan">Balochistan</option>
-                        <option value="Hyderabad">Hyderabad</option>
-                        <option value="Kashmir">Kashmir</option>
+
                     </select>
+
                 </div>
             </div>
 
@@ -112,12 +121,8 @@
                 <div class="select-wrapper">
                     <select class="form-select">
                         <option selected disabled>No course available</option>
-                        <option value="WMA">Modren Web Development</option>
-                        <option value="ai">Ai and Data Science</option>
-                        <option value="graphic">Graphic Designing</option>
-                        <option value="solar">Solar System Installation</option>
-                        <option value="fir">Fire Alarm System Installation</option>
-                        <option value="ui-ux">UI UX Design With AI</option>
+                        <option value="WMA">Modern Web Development</option>
+                        <option value="ai">AI and Data Science</option>
                     </select>
                 </div>
             </div>
@@ -127,52 +132,222 @@
                 <label class="form-label">Select Campus</label>
                 <div class="select-wrapper">
                     <select class="form-select">
-                        <option selected disabled>Select course first</option>
+                        <option selected disabled>Select campus</option>
                         <option value="Aliabad">Aliabad</option>
                         <option value="Nazimabad">Nazimabad</option>
-                        <option value="gulsan">gulshan-e-iqbal</option>
-                        <option value="svit">SVTI Gulshan Campus</option>
+
                     </select>
                 </div>
             </div>
         </form>
     </div>
+    <!--  NEW SECTION: Personal Information -->
+     <div class="form-container">
+<h2 class="section-title pt-4" style="border-top: 1px dashed #e2e8f0; justify-content: start; text-align: left;">
+<svg xmlns="http://www.w3.org/2000/svg" height="25" width="22" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(116, 192, 252)" d="M240 192C240 147.8 275.8 112 320 112C364.2 112 400 147.8 400 192C400 236.2 364.2 272 320 272C275.8 272 240 236.2 240 192zM448 192C448 121.3 390.7 64 320 64C249.3 64 192 121.3 192 192C192 262.7 249.3 320 320 320C390.7 320 448 262.7 448 192zM144 544C144 473.3 201.3 416 272 416L368 416C438.7 416 496 473.3 496 544L496 552C496 565.3 506.7 576 520 576C533.3 576 544 565.3 544 552L544 544C544 446.8 465.2 368 368 368L272 368C174.8 368 96 446.8 96 544L96 552C96 565.3 106.7 576 120 576C133.3 576 144 565.3 144 552L144 544z"/></svg>
+    Personal Information
+</h2>
 
-
-
-
-
-
-
-<!-- footer -->
- <div class="max-w-6xl px-6 md:px-10 py-8 m-auto relative overflow-hidden"><div class="flex justify-start items-center mb-4"><div class="w-23 relative right-1"><img alt="Saylani Mass IT Training" width="80" height="40" decoding="async" data-nimg="1" class="w-full h-auto object-contain" style="color:transparent" srcset="image\saylani_logo.webp"></div><div class="w-38 ml-4 mt-2"><a target="_blank" href="https://saylaniwelfare.com/"></a></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12"><div class="lg:col-span-4 md:col-span-2"><p class="text-sm sm:text-base leading-relaxed mb-6 text-start md:text-left" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Empowering Pakistan's youth with world-class IT education and training programs to build a brighter digital future.</p><div class="space-y-3 mb-6"><div class="flex items-start gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" aria-hidden="true" style="color:#0B73B7"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="text-xs sm:text-sm" style="color:#9ca3af">A-25, Bahadurabad Chowrangi, Karachi, Pakistan</span></div><div class="flex items-center gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" aria-hidden="true" style="color:#6da800"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><a class="text-xs sm:text-sm hover:text-white transition-colors" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="tel:+922134161365">+92 21 111 729 526</a></div><div class="flex items-center gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" aria-hidden="true" style="color:#0B73B7"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg><a class="text-xs sm:text-sm hover:text-white transition-colors" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="mailto:saylanimass@gmail.com">saylanimass@gmail.com</a></div></div><div class="flex justify-start gap-2 sm:gap-3"><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="Facebook" href="https://www.facebook.com/saylani.smit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="Twitter" href="https://x.com/OfficialSwit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="LinkedIn" href="https://www.linkedin.com/company/saylanimassit/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="Instagram" href="https://www.instagram.com/saylani.smit/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="YouTube" href="https://www.youtube.com/@SaylaniMassITTraining"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div><a href="https://play.google.com/store/apps/details?id=com.saylanitech.smitlmsapp&amp;hl=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 mt-6 rounded-xl px-4 py-2.5 transition-transform hover:scale-[1.03]" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71));color:#ffffff"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffc107" d="m23 12c0 .75-.42 1.41-1.03 1.75l-5.2 2.89-4.4-4.64 4.4-4.64 5.2 2.89c.61.34 1.03 1 1.03 1.75z"></path><path fill="#03a9f4" d="m12.37 12-10.8 11.39c-.36-.36-.57-.85-.57-1.39v-20c0-.54.21-1.03.57-1.39z"></path><path fill="#f44336" d="m12.37 12 4.4 4.64-12.8 7.11c-.29.16-.62.25-.97.25-.56 0-1.07-.23-1.43-.61z"></path><path fill="#4caf50" d="m16.77 7.36-4.4 4.64-10.8-11.39c.36-.38.87-.61 1.43-.61.35 0 .68.09.97.25z"></path></svg><span class="flex flex-col items-start leading-tight text-left"><span class="text-[9px] uppercase tracking-wide opacity-80">Get it on</span><span class="text-[15px] font-semibold -mt-0.5">Google Play</span></span></a></div><div class="lg:col-span-2 md:col-span-1"><h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block" style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Quick Links<span class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3><ul class="space-y-2 sm:space-y-3"><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/"><span>Home</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/chat"><span>Chat Us</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/enroll">
-      <span>Enroll Now</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/download-id-card"><span>Download ID Card</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/entry-test-status"><span>Entry Test Status</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/result"><span>Check Results</span></a></li></ul></div><div class="lg:col-span-3 md:col-span-1"><h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block" style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Our Courses<span class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3><ul class="space-y-2 sm:space-y-3"><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/modern-web-application-development"><span>Web Development</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/agentic-ai"><span>Agentic AI</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/artificial-intelligence-and-data-science"><span>AI &amp; Data Science</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/graphic-designing-with-ai"><span>Graphic Design</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/3d-animation"><span>3D Animation</span></a></li></ul></div><div class="lg:col-span-3 md:col-span-2"><h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block" style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Resources<span class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3><ul class="space-y-2 sm:space-y-3"><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses"><span>Courses</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/campuses"><span>Campuses</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/contact"><span>Contact Us</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/privacy-policy"><span>Privacy Policy</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/terms-of-service"><span>Terms of Service</span></a></li></ul></div></div></div>
-     
-      <!-- chat -->
-       <!-- Bottom Footer Bar -->
-<div class="footer-bottom">
-
-    <div class="footer-bottom-inner">
-
-        <p>
-            © 2013 - 2026
-            <strong>Saylani Mass IT Training</strong>.
-            All rights reserved.
-        </p>
-
-        <div class="footer-bottom-links">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms-of-service">Terms of Service</a>
+<form class="form-grid ">
+    <!-- Full Name -->
+    <div class="form-group">
+        <label class="form-label">Full Name<span class="required">*</span></label>
+        <div class="input-icon-wrapper"> 
+            <input type="text" class="form-select" placeholder="Enter your full name" required >
         </div>
-
     </div>
 
+    <!-- Father Name -->
+    <div class="form-group">
+        <label class="form-label">Father Name<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="text" class="form-select" placeholder="Enter father's name" required>
+        </div>
+    </div>
+
+    <!-- Date of Birth -->
+    <div class="form-group">
+        <label class="form-label">Date of Birth<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="date" class="form-select" required>
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+        <label class="form-label">Email<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="email" class="form-select" placeholder="your.email@example.com" required>
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+        <label class="form-label">Phone<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="tel" class="form-select" placeholder="Enter phone number" required>
+        </div>
+    </div>
+
+    <!-- Father's Phone -->
+    <div class="form-group">
+        <label class="form-label">Father's Phone<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="tel" class="form-select" placeholder="Enter phone number" required>
+        </div>
+    </div>
+
+    <!-- ID Number -->
+    <div class="form-group">
+        <label class="form-label">ID Number<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="text" class="form-select" placeholder="Enter ID number" required>
+        </div>
+    </div>
+
+    <!-- Father's ID Number -->
+    <div class="form-group">
+        <label class="form-label">Father's ID Number<span class="required">*</span></label>
+        <div class="input-icon-wrapper">
+            <input type="text" class="form-select" placeholder="Enter ID number" required>
+        </div>
+    </div>
+
+    <!-- Address (Takes Full Width) -->
+    <div class="form-group full-width-field">
+        <label class="form-label">Address<span class="required">*</span> <span style="color: #94a3b8; font-weight: normal; font-size: 12px; margin-left: 0;">(0/220 characters)</span></label>
+        <textarea class="custom-form-textarea" rows="3" placeholder="Enter your complete address (minimum 10 characters)" required></textarea>
+    </div>
+</form>
+
+
+    <!-- 5. Real Custom Live Chat Support SVG Widget -->
+    <div class="floating-chat-container">
+        <div class="chat-message-bubble">
+            Welcome to Saylani Mass IT Training! How can I help you today?
+            <span class="close-chat-action">&times;</span>
+        </div>
+        <div class="chat-icon-trigger">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.134 2 11.235c0 2.921 1.45 5.518 3.731 7.202-.132.732-.482 2.222-1.47 3.32a.377.377 0 0 0 .343.585c2.19-.074 4.095-.913 5.176-1.488A10.741 10.741 0 0 0 12 20.47c5.523 0 10-4.134 10-9.235S17.523 2 12 2zm0 16.623c-4.52 0-8.204-3.315-8.204-7.388 0-4.073 3.684-7.388 8.204-7.388 4.52 0 8.204 3.315 8.204 7.388 0 4.073-3.684 7.388-8.204 7.388z"/>
+            </svg>
+        </div>
+    </div>
+</div>
+<!-- ==========================================
+     NEW SECTION: Education & Technical Details
+     ========================================== -->
+     <div class="form-grid">
+<h2 class="section-title pt-4 full-width-field" style="border-top: 1px dashed #e2e8f0; justify-content: start; text-align: left; grid-column: span 2;">
+    <i class="fa-solid fa-user-graduate" style="color: #0284c7; margin-right: 8px; font-size: 18px;"></i>
+    Education & Technical Details
+</h2>
+
+<!-- Computer Proficiency -->
+<div class="form-group">
+    <label class="form-label">Computer Proficiency<span class="required">*</span></label>
+    <div class="select-wrapper">
+        <select class="form-select">
+            <option selected disabled>Select your computer proficiency</option>
+            <option value="none">No Experience</option>
+            <option value="basic">Basic Computer Knowledge</option>
+            <option value="advanced">Web / Graphic / Programming Knowledge</option>
+        </select>
+    </div>
 </div>
 
-<!-- Chat Button -->
-<div class="footer-chat">
-    <div class="chat-icon">◯</div>
+<!-- Last Qualification -->
+<div class="form-group">
+    <label class="form-label">Last Qualification<span class="required">*</span></label>
+    <div class="select-wrapper">
+        <select class="form-select">
+            <option selected disabled>Last qualification</option>
+            <option value="matric">Matric / O-Level</option>
+            <option value="inter">Intermediate / A-Level</option>
+            <option value="undergrad">Undergraduate</option>
+            <option value="grad">Graduate</option>
+        </select>
+    </div>
 </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- Where did you hear about us -->
+<div class="form-group full-width-field">
+    <label class="form-label">Where did you hear about us?<span class="required">*</span></label>
+    <div class="select-wrapper">
+        <select class="form-select">
+            <option selected disabled>Where did you hear about us?</option>
+            <option value="facebook">Facebook / Instagram</option>
+            <option value="youtube">YouTube</option>
+            <option value="friend">Friend / Relative</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+</div>
+</div>
+<!-- Laptop Radio Buttons -->
+<div class="form-group full-width-field">
+    <label class="form-label">Do you have a Laptop?<span class="required">*</span></label>
+    <div class="radio-group-container">
+        <label class="radio-option">
+            <input type="radio" name="laptop" value="yes" required>
+            <span>Yes</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="laptop" value="no" required>
+            <span>No</span>
+        </label>
+    </div>
+</div>
+
+<!--pic--> 
+<h2 class="section-title pt-4 full-width-field" style="justify-content: start; text-align: left; grid-column: span 2;">
+    <i class="fa-solid fa-upload" style="color: #0284c7; margin-right: 8px; font-size: 18px;"></i>
+    Upload Picture
+</h2>
+
+<div class="form-group full-width-field">
+    <div class="upload-dropzone">
+        <i class="fa-solid fa-cloud-arrow-up upload-zone-icon"></i>
+        <!-- Real hidden input click trigger ke liye -->
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;" required>
+        <button type="button" class="custom-upload-btn" onclick="document.getElementById('imageUpload').click()">+ Upload Picture</button>
+    </div>
+</div>
+
+
+ 
+    <!-- fooooterrrrr -->
+    
+    <div class="max-w-6xl px-6 md:px-10 py-8 m-auto relative overflow-hidden"><div class="flex justify-start items-center mb-4"><div class="w-23 relative right-1"><img alt="Saylani Mass IT Training" width="80" height="40" decoding="async" data-nimg="1" class="w-full h-auto object-contain" style="color:transparent" srcset="image\saylani_logo.webp"></div><div class="w-38 ml-4 mt-2"><a target="_blank" href="https://saylaniwelfare.com/"></a></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12"><div class="lg:col-span-4 md:col-span-2"><p class="text-sm sm:text-base leading-relaxed mb-6 text-start md:text-left" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Empowering Pakistan's youth with world-class IT education and training programs to build a brighter digital future.</p><div class="space-y-3 mb-6"><div class="flex items-start gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-0.5" aria-hidden="true" style="color:#0B73B7"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="text-xs sm:text-sm" style="color:#9ca3af">A-25, Bahadurabad Chowrangi, Karachi, Pakistan</span></div><div class="flex items-center gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" aria-hidden="true" style="color:#6da800"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><a class="text-xs sm:text-sm hover:text-white transition-colors" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="tel:+922134161365">+92 21 111 729 526</a></div><div class="flex items-center gap-3 text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" aria-hidden="true" style="color:#0B73B7"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg><a class="text-xs sm:text-sm hover:text-white transition-colors" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="mailto:saylanimass@gmail.com">saylanimass@gmail.com</a></div></div><div class="flex justify-start gap-2 sm:gap-3"><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="Facebook" href="https://www.facebook.com/saylani.smit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="Twitter" href="https://x.com/OfficialSwit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="LinkedIn" href="https://www.linkedin.com/company/saylanimassit/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="Instagram" href="https://www.instagram.com/saylani.smit/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a target="_blank" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group" style="background-color:#2d2d2d" aria-label="YouTube" href="https://www.youtube.com/@SaylaniMassITTraining"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-4 h-4 sm:w-5 sm:h-5 transition-colors" aria-hidden="true" style="color:#9ca3af"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div><a href="https://play.google.com/store/apps/details?id=com.saylanitech.smitlmsapp&amp;hl=en" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 mt-6 rounded-xl px-4 py-2.5 transition-transform hover:scale-[1.03]" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71));color:#ffffff"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffc107" d="m23 12c0 .75-.42 1.41-1.03 1.75l-5.2 2.89-4.4-4.64 4.4-4.64 5.2 2.89c.61.34 1.03 1 1.03 1.75z"></path><path fill="#03a9f4" d="m12.37 12-10.8 11.39c-.36-.36-.57-.85-.57-1.39v-20c0-.54.21-1.03.57-1.39z"></path><path fill="#f44336" d="m12.37 12 4.4 4.64-12.8 7.11c-.29.16-.62.25-.97.25-.56 0-1.07-.23-1.43-.61z"></path><path fill="#4caf50" d="m16.77 7.36-4.4 4.64-10.8-11.39c.36-.38.87-.61 1.43-.61.35 0 .68.09.97.25z"></path></svg><span class="flex flex-col items-start leading-tight text-left"><span class="text-[9px] uppercase tracking-wide opacity-80">Get it on</span><span class="text-[15px] font-semibold -mt-0.5">Google Play</span></span></a></div><div class="lg:col-span-2 md:col-span-1"><h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block" style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Quick Links<span class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3><ul class="space-y-2 sm:space-y-3"><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/"><span>Home</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/chat"><span>Chat Us</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/enroll">
+         <span>Enroll Now</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/download-id-card"><span>Download ID Card</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/entry-test-status"><span>Entry Test Status</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/result"><span>Check Results</span></a></li></ul></div><div class="lg:col-span-3 md:col-span-1"><h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block" style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Our Courses<span class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3><ul class="space-y-2 sm:space-y-3"><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/modern-web-application-development"><span>Web Development</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/agentic-ai"><span>Agentic AI</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/artificial-intelligence-and-data-science"><span>AI &amp; Data Science</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/graphic-designing-with-ai"><span>Graphic Design</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses/3d-animation"><span>3D Animation</span></a></li></ul></div><div class="lg:col-span-3 md:col-span-2"><h3 class="text-white text-base sm:text-lg font-bold mb-4 sm:mb-6 relative inline-block" style="font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif">Resources<span class="absolute -bottom-1 sm:-bottom-2 left-0 w-8 sm:w-12 h-0.5 sm:h-1 rounded-full" style="background:linear-gradient(to right, #0B73B7, rgba(109, 168, 0, 0.71))"></span></h3><ul class="space-y-2 sm:space-y-3"><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/courses"><span>Courses</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/campuses"><span>Campuses</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/contact"><span>Contact Us</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/privacy-policy"><span>Privacy Policy</span></a></li><li><a class="inline-flex items-center gap-2 group text-xs sm:text-sm hover:text-white hover:underline" style="color:#9ca3af;font-family:&quot;Montserrat&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif" href="/terms-of-service"><span>Terms of Service</span></a></li></ul></div></div></div>
+        
+          <!-- Bottom Footer Bar -->
+    <div class="footer-bottom">
+    
+       <div class="footer-bottom-inner">
+    
+           <p>
+               © 2013 - 2026
+               <strong>Saylani Mass IT Training</strong>.
+               All rights reserved.
+           </p>
+    
+           <div class="footer-bottom-links">
+               <a href="/privacy-policy">Privacy Policy</a>
+               <a href="/terms-of-service">Terms of Service</a>
+           </div>
+    
+       </div>
+    
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://jsdelivr.net"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+ 
+ 
+ 
+ 
+ 
